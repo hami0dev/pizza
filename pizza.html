@@ -14,14 +14,12 @@
     --pizza-red: #8f2020;
     --pizza-red-dark: #641313;
     --pizza-yellow: #ffc928;
-    --cream: #fff8e7;
     --text: #2b1a16;
     --muted: #75645d;
     --card: rgba(255, 255, 255, 0.97);
 }
 
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -59,10 +57,7 @@ body::before {
     backdrop-filter: blur(5px);
 }
 
-header {
-    text-align: center;
-    padding: 8px 10px 24px;
-}
+header { text-align: center; padding: 8px 10px 24px; }
 
 .logo-mark {
     width: 78px;
@@ -86,32 +81,19 @@ h1 {
     letter-spacing: .5px;
 }
 
-.subtitle {
-    margin: 7px 0 0;
-    color: var(--muted);
-    font-size: 1rem;
-}
+.subtitle { margin: 7px 0 0; color: var(--muted); font-size: 1rem; }
 
 .divider {
-    width: 72px;
-    height: 4px;
-    margin: 15px auto 0;
-    border-radius: 99px;
-    background: var(--pizza-yellow);
+    width: 72px; height: 4px; margin: 15px auto 0;
+    border-radius: 99px; background: var(--pizza-yellow);
 }
 
 .filter-buttons {
-    position: sticky;
-    top: 10px;
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin: 0 auto 30px;
-    padding: 10px;
+    position: sticky; top: 10px; z-index: 20;
+    display: flex; justify-content: center; gap: 14px;
+    margin: 0 auto 30px; padding: 10px;
     background: rgba(255, 248, 231, 0.90);
-    border-radius: 18px;
-    backdrop-filter: blur(10px);
+    border-radius: 18px; backdrop-filter: blur(10px);
 }
 
 .filter-buttons button {
@@ -123,8 +105,7 @@ h1 {
     color: #3b2500;
     cursor: pointer;
     font-family: 'Cairo', sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1rem; font-weight: 800;
     box-shadow: 0 8px 20px rgba(190, 130, 0, .20);
     transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
@@ -139,13 +120,11 @@ h1 {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 22px;
-    scroll-margin-top: 105px;
+    gap: 22px; scroll-margin-top: 105px;
 }
 
 .menu-item {
-    overflow: hidden;
-    background: var(--card);
+    overflow: hidden; background: var(--card);
     border: 1px solid rgba(143, 32, 32, .10);
     border-radius: 20px;
     box-shadow: 0 10px 28px rgba(66, 25, 15, .12);
@@ -158,90 +137,51 @@ h1 {
 }
 
 .menu-item img {
-    display: block;
-    width: 100%;
-    height: 225px;
-    object-fit: cover;
+    display: block; width: 100%; height: 225px; object-fit: cover;
 }
 
-.menu-info {
-    padding: 16px 17px 18px;
-}
+.menu-info { padding: 16px 17px 18px; }
 
 .menu-info h3 {
     margin: 0;
     font-family: 'Poppins', 'Cairo', sans-serif;
-    font-size: 1.08rem;
-    font-weight: 700;
-    direction: ltr;
-    text-align: left;
+    font-size: 1.08rem; font-weight: 700;
+    direction: ltr; text-align: left;
 }
 
-.menu-info p {
-    margin: 6px 0 0;
-    color: var(--muted);
-    font-size: .95rem;
-}
+.menu-info p { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
 
 .menu-price {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    background: var(--pizza-red);
-    color: #fff;
+    display: inline-block; margin-top: 12px;
+    padding: 5px 12px; border-radius: 999px;
+    background: var(--pizza-red); color: #fff;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
     direction: ltr;
 }
 
 .empty {
-    grid-column: 1 / -1;
-    padding: 35px 15px;
-    text-align: center;
-    color: var(--muted);
+    grid-column: 1 / -1; padding: 35px 15px;
+    text-align: center; color: var(--muted);
 }
 
 @media (max-width: 600px) {
     body { background-attachment: scroll; }
-
     .container {
-        width: calc(100% - 12px);
-        margin: 6px auto;
-        padding: 16px 12px 24px;
-        border-radius: 22px;
+        width: calc(100% - 12px); margin: 6px auto;
+        padding: 16px 12px 24px; border-radius: 22px;
     }
-
     header { padding-bottom: 17px; }
-
-    .logo-mark {
-        width: 68px;
-        height: 68px;
-        font-size: 34px;
-    }
-
+    .logo-mark { width: 68px; height: 68px; font-size: 34px; }
     .subtitle { font-size: .9rem; }
-
-    .filter-buttons {
-        top: 6px;
-        gap: 9px;
-        margin-bottom: 22px;
-        padding: 8px;
-    }
-
+    .filter-buttons { top: 6px; gap: 9px; margin-bottom: 22px; padding: 8px; }
     .filter-buttons button {
-        min-width: 0;
-        flex: 1;
-        padding: 12px 8px;
-        font-size: .92rem;
+        min-width: 0; flex: 1;
+        padding: 12px 8px; font-size: .92rem;
     }
-
     .menu-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        scroll-margin-top: 85px;
+        grid-template-columns: 1fr; gap: 16px; scroll-margin-top: 85px;
     }
-
     .menu-item img { height: 220px; }
 }
 </style>
@@ -267,16 +207,6 @@ h1 {
 </div>
 
 <script>
-/* ============================================================
-   قائمة المنتجات
-   ------------------------------------------------------------
-   لإضافة بيتزا جديدة:
-   {name: "الاسم", category: "pizza", price: "السعر", image: "رابط الصورة", description: "الوصف"},
-
-   لإضافة مشروب غازي جديد:
-   {name: "الاسم", category: "drinks", price: "السعر", image: "رابط الصورة", description: "الوصف"},
-   ============================================================ */
-
 const menuItems = [
 
     /* ========== 🍕 البيتزا ========== */
@@ -286,7 +216,7 @@ const menuItems = [
     {name: "Vegetable Pizza (L)", category: "pizza", price: "35 Dinar", image: "https://static.webteb.net/images/content/ramadanrecipe_recipe_1284_773ece53751-3e01-4836-a67f-685c85a83534.jpg", description: "بيتزا خضار كبيرة"},
     {name: "Pepperoni Pizza (M)", category: "pizza", price: "25 Dinar", image: "https://storage.de.cloud.ovh.net/v1/AUTH_822fb2b5f08942e5991f0bbd03a121b7/minidine-prod/chitirchicken/items/thumbnail/1811753730121_lg.png", description: "بيتزا بيبروني وسط"},
     {name: "Pepperoni Pizza (L)", category: "pizza", price: "35 Dinar", image: "https://dominoskw.com/cdn/shop/files/tasty_pepperoni_08062024.jpg?v=1719325270", description: "بيتزا بيبروني كبيرة"},
-    {name: "Pizza 4 Cheese", category: "pizza", price: "35 Dinar", image: "https://pizzapro.in/cdn/shop/articles/four-cheese-pizza-pizza-pro_379991d3-9d40-4a9c-9ef7-33b247b7357e.jpg?v=1778491181", description: "بيتزا بيبروني كبيرة"},
+    {name: "Pizza 4 Cheese", category: "pizza", price: "35 Dinar", image: "https://pizzapro.in/cdn/shop/articles/four-cheese-pizza-pizza-pro_379991d3-9d40-4a9c-9ef7-33b247b7357e.jpg?v=1778491181", description: "بيتزا 4 أجبان"},
     {name: "Pizza Hawaiana", category: "pizza", price: "35 Dinar", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ4FzxncwjKVXYBgow-01qGKcgylFdlcb5Q0SVpBNNDA&s=10", description: "بيتزا هاواينا"},
     {name: "Pizza BBQ Chicken", category: "pizza", price: "35 Dinar", image: "https://sallysbakingaddiction.com/wp-content/uploads/2014/03/barbecue-bbq-chicken-pizza.jpg", description: "بيتزا شيكن بيبيسي"},
     {name: "Pizza Veggies", category: "pizza", price: "35 Dinar", image: "https://kristineskitchenblog.com/wp-content/uploads/2024/12/veggie-pizza-recipe-09-2.jpg", description: "بيتزا خضار"},
@@ -295,27 +225,32 @@ const menuItems = [
     {name: "Pizza Neapolitan", category: "pizza", price: "35 Dinar", image: "https://thescranline.com/wp-content/uploads/2026/01/PIZZA-RECIPE-S-02.jpg", description: "بيتزا نابوليتان"},
     {name: "Pizza NewYork", category: "pizza", price: "35 Dinar", image: "https://dinnerthendessert.com/wp-content/uploads/2023/06/Supreme-Pizza-15.jpg", description: "بيتزا نيويورك"},
     {name: "Pizza Mushroom", category: "pizza", price: "35 Dinar", image: "https://www.acouplecooks.com/wp-content/uploads/2019/06/Mushroom-Pizza-with-Herbs-011.jpg", description: "بيتزا ميشرووم"},
-    /* أضف بيتزا جديدة هنا ⬇️ */
-    // {name: "Chicken Pizza (M)", category: "pizza", price: "28 QR", image: "رابط_الصورة", description: "بيتزا دجاج وسط"},
-    // {name: "Cheese Pizza (L)", category: "pizza", price: "38 QR", image: "رابط_الصورة", description: "بيتزا جبنة كبيرة"},
 
     /* ========== 🥤 المشروبات الغازية ========== */
-    {name: "Coca Cola", category: "drinks", price: "10 Dinar", image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Coca_Cola_Flasche_-_Original_Taste.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original", description: "كوكا كولا"},
+    {name: "Coca Cola", category: "drinks", price: "10 Dinar", image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Coca_Cola_Flasche_-_Original_Taste.jpg", description: "كوكا كولا"},
     {name: "Pepsi", category: "drinks", price: "10 Dinar", image: "https://cdn.mafrservices.com/sys-master-root/hc5/hef/51636415332382/332818_main.jpg", description: "بيبسي"},
     {name: "Selecto", category: "drinks", price: "10 Dinar", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAeJGzfpMxq2HtRN6Njp4sB8T8WC5iOPjzkyAsWvX8IGavt65SBocr6NU&s=10", description: "حمود سيليكتوا"},
     {name: "Fanta Orange", category: "drinks", price: "10 Dinar", image: "https://webshop.rotodinamic.hr/image/cache/cache/2001-3000/2830/main/276a-05057-0-3-800x1200.jpg", description: "فانتا برتقال"},
-    {name: "Water", category: "drinks", price: "5 Dinar", image: "https://cdn.mafrservices.com/pim-content/UAE/media/product/812/1739910603/812_main.jpg?im=Resize=480", description: "ماء"}
+    {name: "Water", category: "drinks", price: "5 Dinar", image: "https://cdn.mafrservices.com/pim-content/UAE/media/product/812/1739910603/812_main.jpg?im=Resize=480", description: "ماء"},
 
+    /* ========== ⬇️ أضف مشروباتك الجديدة هنا ⬇️ ========== */
+    {name: "Seven UP", category: "drinks", price: "5 Dinar", image: "https://www.cpm-diffusion.com/wp-content/uploads/2022/08/seven-up-min.png", description: "سافن اب"},
+    {name: "", category: "drinks", price: "", image: "", description: ""},
+    {name: "", category: "drinks", price: "", image: "", description: ""},
+    {name: "", category: "drinks", price: "", image: "", description: ""}
 
 ];
 
-/* ========== الكود البرمجي (لا حاجة لتعديله) ========== */
+/* ========== الكود البرمجي (لا تعدّل هنا) ========== */
 
 const menuGrid = document.getElementById('menu-grid');
 const filterButtons = document.querySelectorAll('.filter-buttons button');
 
 function displayMenu(items) {
     menuGrid.innerHTML = '';
+
+    // تجاهل الأسطر الفارغة
+    items = items.filter(item => item.name && item.name.trim() !== '');
 
     if (!items.length) {
         menuGrid.innerHTML = '<div class="empty">لا توجد منتجات في هذا القسم حالياً.</div>';
@@ -327,7 +262,8 @@ function displayMenu(items) {
         div.classList.add('menu-item');
 
         div.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" loading="lazy">
+            <img src="${item.image}" alt="${item.name}" loading="lazy"
+                 onerror="this.src='https://via.placeholder.com/400x225/8f2020/ffffff?text=No+Image'">
             <div class="menu-info">
                 <h3>${item.name}</h3>
                 <p>${item.description || ''}</p>
@@ -354,18 +290,13 @@ filterButtons.forEach(btn => {
 
         setTimeout(() => {
             const firstItem = menuGrid.querySelector('.menu-item');
-
             if (firstItem) {
                 const offset = window.innerWidth <= 600 ? 88 : 110;
                 const position =
                     firstItem.getBoundingClientRect().top +
-                    window.pageYOffset -
-                    offset;
+                    window.pageYOffset - offset;
 
-                window.scrollTo({
-                    top: position,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: position, behavior: 'smooth' });
             }
         }, 50);
     });
